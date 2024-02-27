@@ -1,4 +1,4 @@
-LCC vs Non-LCC Delay Time: Executive Summary
+LCC vs Non-LCC Delay Time
 Airlines and passengers incur substantial financial losses annually due to flight delays, impacting expenses, productivity, and public perception. Our investigation aims to assess differences in delay durations between Low Cost Carrier (LCC) and non-LCC airlines, vital for predicting consumer choices and shaping airline operations.
 
 Hypothesis & Outcomes
