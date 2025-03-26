@@ -93,15 +93,9 @@ Missing and extreme outliers were removed to improve clarity.
 
 - Python (Pandas, NumPy)
 - Seaborn & Matplotlib for visualization
-- Jupyter Notebook / Google Colab
+- Google Colab
 - Dataset: U.S. Domestic Flights (CSV format)
 
 ---
 
-## 🙏 Acknowledgements
-
-Inspired by [Katherine Weiting's Portfolio](https://github.com/Katherineweiting)  
-Flight dataset from the [U.S. DOT / BTS](https://www.transtats.bts.gov/)
-
----
 
