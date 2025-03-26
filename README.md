@@ -1,20 +1,107 @@
-LCC vs Non-LCC Delay Time
-Airlines and passengers incur substantial financial losses annually due to flight delays, impacting expenses, productivity, and public perception. Our investigation aims to assess differences in delay durations between Low Cost Carrier (LCC) and non-LCC airlines, vital for predicting consumer choices and shaping airline operations.
+# ✈️ Flight Delay Analysis
 
-Hypothesis & Outcomes
-We hypothesized variations in delay times between LCCs and non-LCCs due to operational and cost differences. Our analysis explored multiple outcomes, considering factors such as reduced profit margins and operational efficiency.
+This project explores U.S. domestic flight delay patterns using real-world aviation data.  
+The goal is to identify which airlines, days, or operational factors contribute to higher delays and provide actionable insights through data visualization.
 
-Ideal Experiment
-An ideal experiment would control aircraft models, flight timing, and passenger capacity to accurately gauge delay causes.
+---
 
-Dataset Overview
-Our dataset covers flight-related data from January to August 2023, detailing delays, origins, destinations, and causes. It provides insights into flight disruptions and patterns across airlines.
+## 📑 Table of Contents
+- [Project Overview](#project-overview)
+- [Business Problem](#business-problem)
+- [Data Description](#data-description)
+- [Methodology](#methodology)
+- [Key Findings](#key-findings)
+- [Next Steps](#next-steps)
+- [Technologies Used](#technologies-used)
+- [Acknowledgements](#acknowledgements)
 
-Regression Analysis
-We conducted logarithmic regression analysis, revealing slightly lower delay rates for LCC flights, significant with a low p-value. Specific variables like day of the week and airport size were also analyzed.
+---
 
-Business Recommendations
-To enhance operational efficiency, airlines should allocate staff based on flight distance and day of the week. Consumers should consider LCCs for shorter flights and larger airports to minimize delay times.
+## 📌 Project Overview
 
-Conclusion
-Despite statistically significant differences, delay times between LCC and non-LCC airlines are insubstantial. Both types remain competitive, allowing consumers to choose based on other factors like price and amenities, without compromising reliability.
+Flight delays are a significant concern for airlines, passengers, and the broader transportation ecosystem.  
+This project analyzes historical flight data to uncover trends in departure delays by airline, day of week, and time.
+
+The focus is on understanding:
+- Which airlines are most delayed?
+- When do delays typically occur?
+- Are delays predictable?
+
+---
+
+## 🧩 Business Problem
+
+Frequent and unpredictable flight delays lead to:
+- Increased operational costs for airlines
+- Reduced passenger satisfaction
+- Missed connections and cascading delays
+
+This project aims to support:
+- Airline performance evaluation
+- Strategic scheduling
+- Enhanced customer transparency
+
+---
+
+## 🧾 Data Description
+
+The dataset contains over 1 million U.S. domestic flights and includes features like:
+- `CarrierName`: Airline name
+- `DepDelay`: Departure delay in minutes
+- `DayOfWeek`: Day of the week (1 = Monday, 7 = Sunday)
+- Additional metadata (airport, origin, time of day, etc.)
+
+For analysis, a sample of 100,000 rows was used for performance optimization.  
+Missing and extreme outliers were removed to improve clarity.
+
+---
+
+## ⚙️ Methodology
+
+1. **Data Cleaning & Preprocessing**
+   - Dropped null delay values
+   - Filtered out extreme outliers (> 1000 mins)
+   - Sampled the dataset for consistency
+
+2. **Exploratory Data Analysis**
+   - Bar charts, histograms, and boxplots to analyze delay patterns
+   - Grouped by airline and day of the week
+
+3. **Visualization**
+   - Used Seaborn and Matplotlib for clean visual output
+
+---
+
+## 📊 Key Findings
+
+- Certain airlines consistently have longer average delays
+- Mondays and Fridays tend to show higher delay levels
+- Delay distributions are right-skewed with long tails (extreme delays)
+- Wide variability even within the same airline
+
+---
+
+## 🔮 Next Steps
+
+- Perform time-series analysis by month or time of day
+- Predict delay likelihood using machine learning
+- Expand analysis with weather and airport traffic data
+
+---
+
+## 🛠 Technologies Used
+
+- Python (Pandas, NumPy)
+- Seaborn & Matplotlib for visualization
+- Jupyter Notebook / Google Colab
+- Dataset: U.S. Domestic Flights (CSV format)
+
+---
+
+## 🙏 Acknowledgements
+
+Inspired by [Katherine Weiting's Portfolio](https://github.com/Katherineweiting)  
+Flight dataset from the [U.S. DOT / BTS](https://www.transtats.bts.gov/)
+
+---
+
